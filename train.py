@@ -163,7 +163,8 @@ def main(args):
                 losses = AverageMeter()
                 
             if iteration%eval_freq==0 and iteration>0:
-                img_prefix = os.path.join(checkpoint_dir,"%d_"%iteration) 
+                #img_prefix = os.path.join(checkpoint_dir,"%d_"%iteration) 
+                img_prefix="/content/image.jpg"
                 generate_samples(model,img_prefix,dataloader.batch_size)
                 
             if iteration%save_freq==0 and iteration>0:
