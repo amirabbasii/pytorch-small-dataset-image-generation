@@ -100,7 +100,7 @@ def save_checkpoint(checkpoint_dir,device,model,iteration=0):
     checkpoint["iteration"] = iteration
     print("saving model....")
     #save_path = os.path.join(checkpoint_dir,"checkpoint_iter%d.pth.tar"%iteration)
-    save_path="/content/model.pth"
+    save_path=" /content/drive/MyDrive/model_sperm_gan.pth"
     torch.save(checkpoint, save_path)
     print("model saved at",save_path)
 
