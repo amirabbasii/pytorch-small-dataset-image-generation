@@ -14,7 +14,7 @@ def setup_dataloader(name,h=128,w=128,batch_size=4,num_workers=4):
     elif name=="anime":
         img_path_list = glob.glob("./data/anime/*.png")
     else:
-        img_path_list = glob.glob("./data/mhsma/*.jpg")
+        img_path_list = glob.glob("./data/"+name+"/*.jpg")
         
     assert len(img_path_list) > 0
 
